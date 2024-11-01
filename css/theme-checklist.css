@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'theme-checklist-icons';
+  src: url('fonts/theme-checklist-icons.eot?-d0ojbd');
+  src: url('fonts/theme-checklist-icons.eot?#iefix-d0ojbd') format('embedded-opentype'), url('fonts/theme-checklist-icons.woff?-d0ojbd') format('woff'), url('fonts/theme-checklist-icons.ttf?-d0ojbd') format('truetype'), url('fonts/theme-checklist-icons.svg?-d0ojbd#theme-checklist-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+#theme-checklist-admin .theme-checklist-list li {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 55px;
+  border: 1px solid #D0D0D0;
+  padding: 10px 15px;
+  background: #F9F9F9;
+  margin-bottom: 5px;
+}
+#theme-checklist-admin .theme-checklist-list li .result {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -14px;
+}
+#theme-checklist-admin .theme-checklist-list li .result a {
+  line-height: 1em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  color: #C0C0C0;
+  padding: 4px;
+}
+#theme-checklist-admin .theme-checklist-list li .result a.result-active {
+  background: #F0F0F0;
+}
+#theme-checklist-admin .theme-checklist-list li .result a.item-pass.result-active {
+  color: #008000;
+}
+#theme-checklist-admin .theme-checklist-list li .result a.item-fail.result-active {
+  color: red;
+}
+#theme-checklist-admin .theme-checklist-list li .description {
+  padding: 0 0 0 70px;
+}
+#theme-checklist-admin .theme-checklist-list li .description h5 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: 0 0 0.2em 0;
+  padding-right: 100px;
+}
+#theme-checklist-admin .theme-checklist-list li .description p {
+  margin: 0;
+  color: #777777;
+  padding-right: 100px;
+}
+#theme-checklist-admin .theme-checklist-list li .notes {
+  margin-top: 10px;
+}
+#theme-checklist-admin .theme-checklist-list li .notes .save-notes {
+  float: right;
+  font-size: 12px;
+  text-decoration: none;
+  color: #999999;
+}
+#theme-checklist-admin .theme-checklist-list li .notes .save-notes.unsaved-changes {
+  color: #2ea2cc;
+  font-weight: bold;
+}
+#theme-checklist-admin .theme-checklist-list li .notes label {
+  display: block;
+  font-size: 12px;
+  color: #666666;
+}
+#theme-checklist-admin .theme-checklist-list li .notes textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 12px;
+  border: 1px solid #DDDDDD;
+  background: #F6F6F6;
+  box-shadow: none;
+  line-height: 1.5em;
+}
+#theme-checklist-admin .theme-checklist-list li .notes.hidden {
+  display: none;
+}
+#theme-checklist-admin .theme-checklist-list li .more {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+#theme-checklist-admin .theme-checklist-list li .more .icon-open {
+  display: inline-block;
+  margin-right: 4px;
+  font-size: 10px;
+}
+#theme-checklist-admin .theme-checklist-list li .more a.more-link {
+  line-height: 1em;
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  color: #777777;
+  padding: 4px 5px;
+  border: 1px solid #D0D0D0;
+  border-radius: 3px;
+  background: #F9F9F9;
+}
+#theme-checklist-admin .theme-checklist-list li .more a.more-link:hover {
+  color: #555555;
+  background: #FFFFFF;
+}
+#theme-checklist-admin .theme-checklist-list [class^="icon-"],
+#theme-checklist-admin .theme-checklist-list [class*=" icon-"] {
+  font-family: 'theme-checklist-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#theme-checklist-admin .theme-checklist-list .icon-check:before {
+  content: "\e116";
+}
+#theme-checklist-admin .theme-checklist-list .icon-cross:before {
+  content: "\e117";
+}
+#theme-checklist-admin .theme-checklist-list .icon-open:before {
+  content: "\e128";
+}
+#theme-checklist-admin .import-export {
+  float: right;
+}
+#theme-checklist-admin .import-export a {
+  font-size: 12px;
+  display: inline-block;
+}
+#checklist-import-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 100001;
+}
+#checklist-import-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  margin-left: -260px;
+  margin-top: -153px;
+  padding: 20px;
+  background: #F9F9F9;
+  z-index: 100001;
+}
+#checklist-import-modal textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  font-size: 12px;
+  font-family: "Courier New", Courier, mono;
+}
+#checklist-import-modal small.description {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 2em;
+}
